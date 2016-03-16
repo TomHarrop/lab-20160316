@@ -84,7 +84,7 @@ ggplot(plot.data.stats, aes(x = `Input reads (M)`, y = value,
 * Describe gene expression (read counts) with a GLM
     * $\text{RC}_i \propto X_{1i} + \dots + X_{ni}$
     * In `R` (`DESeq2`, `EdgeR`, `limma`, ...): `design = ~ X1 + X2`
-* Simple case: $\text{GE}_i \propto \text{accession}_i + \text{stage}_i$
+* Simple case: $\text{RC}_i \propto \text{accession}_i + \text{stage}_i$
     * `design = ~ accession + stage`    
 ```{r specColData}
 head(colData(dds.species))
